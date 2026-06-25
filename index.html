@@ -358,9 +358,9 @@
     <div class="card">
       <table>
         <tr><th>Window</th><th class="n">Tickets</th><th class="n">Assigned %</th><th class="n">Median assign-TAT</th><th class="n">Within-SLA %</th><th class="n">Closed ≤24h %</th></tr>
-<tr><td><b>Last 60 days</b></td><td class="n">2,950</td><td class="n">39.9%</td><td class="n">2.62 h</td><td class="n"><span class="pill a">64.3%</span></td><td class="n"><span class="pill g">87%</span></td></tr>
-        <tr><td><b>Last 7 days</b></td><td class="n">1,925</td><td class="n">41.4%</td><td class="n">1.78 h</td><td class="n"><span class="pill a">62.3%</span></td><td class="n"><span class="pill g">87.7%</span></td></tr>
-        <tr><td><b>Today (25 Jun, partial)</b></td><td class="n">300</td><td class="n">28%</td><td class="n">0.77 h</td><td class="n"><span class="pill g">91.8%*</span></td><td class="n"><span class="pill g">100%*</span></td></tr>
+<tr><td><b>Last 60 days</b></td><td class="n">2,952</td><td class="n">39.8%</td><td class="n">2.62 h</td><td class="n"><span class="pill a">64.3%</span></td><td class="n"><span class="pill g">87%</span></td></tr>
+        <tr><td><b>Last 7 days</b></td><td class="n">1,927</td><td class="n">41.3%</td><td class="n">1.78 h</td><td class="n"><span class="pill a">62.3%</span></td><td class="n"><span class="pill g">87.7%</span></td></tr>
+        <tr><td><b>Today (25 Jun, partial)</b></td><td class="n">302</td><td class="n">27.8%</td><td class="n">0.77 h</td><td class="n"><span class="pill g">91.8%*</span></td><td class="n"><span class="pill g">100%*</span></td></tr>
       </table>
       <div class="note">*Today is in-progress — only fast tickets have settled, so SLA / Closed-24h read ~100% and will fall as the day completes. SLA = resolved within 4 working hours (11:00–21:00 IST). ~40% of tickets never log an ASSIGNED_TECHNICIAN state, so assign-TAT is over the assigned subset.</div>
     </div>
@@ -378,7 +378,7 @@
     <div class="winhdr">Sources &amp; honest limits</div>
     <p style="margin-top:6px"><b>§1 Messaging</b> = CleverTap campaign dashboard (source of truth; the event-export mirror undercounts campaign sends/clicks). <b>§2–4 behaviour/timing/app</b> = event-stream export, ~5-day retention, directional. <b>§5 tickets</b> = service-ticket warehouse table (49 days).</p>
     <p style="margin-top:8px"><b>Not available in any source:</b> a "scheduled/sent" PN event beyond CleverTap's own count; push view/impression tracking; session-duration / time-spent field (dwell is a proxy); &gt;5 days of CleverTap engagement history. To build trend, the CleverTap campaign numbers must be logged daily. Nudge→action is association on a single launch day (23 Jun), not measured causal lift.</p>
-    <p style="margin-top:8px">Ticket metrics auto-refreshed hourly: 25 Jun 2026, 21:00 UTC · CleverTap §1 &amp; event-stream §2–4 are the latest manual snapshot · 60-CSP CI pilot.</p>
+    <p style="margin-top:8px">Ticket metrics auto-refreshed hourly: 25 Jun 2026, 23:22 UTC · CleverTap §1 &amp; event-stream §2–4 are the latest manual snapshot · 60-CSP CI pilot.</p>
   </footer>
 
 </div>
