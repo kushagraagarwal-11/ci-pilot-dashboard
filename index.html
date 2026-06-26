@@ -120,7 +120,7 @@
     <h1>CI Messaging &amp; App-Behaviour Dashboard</h1>
     <div class="sub">Capability Intervention V1 pilot · 60-CSP cohort · how the PN &amp; in-app nudges are performing, and how app behaviour is moving</div>
     <div class="winrow">
-      <span class="winchip">Live · 26 Jun 2026, 21:25 UTC · auto-refreshed hourly</span>
+      <span class="winchip">Live · 26 Jun 2026, 23:12 UTC · auto-refreshed hourly</span>
       <span class="winchip">Campaign engagement = CleverTap counts API</span>
       <span class="winchip">Behaviour/app = event stream (~5-day window)</span>
       <span class="winchip">Tickets = warehouse (49 days)</span>
@@ -353,7 +353,7 @@
       <table>
         <tr><th>Window</th><th class="n">Tickets</th><th class="n">Assigned %</th><th class="n">Median assign-TAT</th><th class="n">Within-SLA %</th><th class="n">Closed ≤24h %</th></tr>
 <tr><td><b>Last 60 days</b></td><td class="n">3,216</td><td class="n">38.7%</td><td class="n">2.53 h</td><td class="n"><span class="pill a">63.3%</span></td><td class="n"><span class="pill g">86.1%</span></td></tr>
-        <tr><td><b>Last 7 days</b></td><td class="n">1,892</td><td class="n">37.7%</td><td class="n">2.2 h</td><td class="n"><span class="pill a">60.6%</span></td><td class="n"><span class="pill g">87.3%</span></td></tr>
+        <tr><td><b>Last 7 days</b></td><td class="n">1,891</td><td class="n">37.7%</td><td class="n">2.18 h</td><td class="n"><span class="pill a">60.7%</span></td><td class="n"><span class="pill g">87.4%</span></td></tr>
         <tr><td><b>Today (26 Jun, partial)</b></td><td class="n">264</td><td class="n">18.2%</td><td class="n">0.45 h</td><td class="n"><span class="pill g">97.3%*</span></td><td class="n"><span class="pill g">100%*</span></td></tr>
       </table>
       <div class="note">*Today is in-progress — only fast tickets have settled, so SLA / Closed-24h read ~100% and will fall as the day completes. SLA = resolved within 4 working hours (11:00–21:00 IST). ~40% of tickets never log an ASSIGNED_TECHNICIAN state, so assign-TAT is over the assigned subset.</div>
@@ -372,7 +372,7 @@
     <div class="winhdr">Sources &amp; honest limits</div>
     <p style="margin-top:6px"><b>§1 Messaging</b> = CleverTap campaign dashboard (source of truth; the event-export mirror undercounts campaign sends/clicks). <b>§2–4 behaviour/timing/app</b> = event-stream export, ~5-day retention, directional. <b>§5 tickets</b> = service-ticket warehouse table (49 days).</p>
     <p style="margin-top:8px"><b>Not available in any source:</b> a "scheduled/sent" PN event beyond CleverTap's own count; push view/impression tracking; session-duration / time-spent field (dwell is a proxy); &gt;5 days of CleverTap engagement history. To build trend, the CleverTap campaign numbers must be logged daily. Nudge→action is association on a single launch day (23 Jun), not measured causal lift.</p>
-    <p style="margin-top:8px">Ticket metrics auto-refreshed hourly: 26 Jun 2026, 21:25 UTC · CleverTap §1 &amp; event-stream §2–4 are the latest manual snapshot · 60-CSP CI pilot.</p>
+    <p style="margin-top:8px">Ticket metrics auto-refreshed hourly: 26 Jun 2026, 23:12 UTC · CleverTap §1 &amp; event-stream §2–4 are the latest manual snapshot · 60-CSP CI pilot.</p>
   </footer>
 
 </div>
