@@ -120,7 +120,7 @@
     <h1>CI Messaging &amp; App-Behaviour Dashboard</h1>
     <div class="sub">Capability Intervention V1 pilot · 60-CSP cohort · how the PN &amp; in-app nudges are performing, and how app behaviour is moving</div>
     <div class="winrow">
-      <span class="winchip">Live · 29 Jun 2026, 16:42 IST · auto-refreshed hourly</span>
+      <span class="winchip">Live · 29 Jun 2026, 16:50 IST · auto-refreshed hourly</span>
       <span class="winchip">Campaign engagement = CleverTap counts API</span>
       <span class="winchip">Behaviour/app = event stream (~5-day window)</span>
       <span class="winchip">Tickets = warehouse (49 days)</span>
@@ -688,16 +688,16 @@
   <section>
     <div class="shead"><h2>Operational impact — is CI moving the needle?</h2>
       <span class="insight">Cohort tickets, last 3 days vs 7-day average — live from the warehouse. Watch the SLA &amp; TAT trend.</span></div>
-    <div class="hvitals" style="margin-bottom:14px"><div class="vtile g"><div class="vlab">Urgent nudges fired · 7d</div><div class="vnum g">1062</div><div class="vst g">SR-3 + SR-4 warnings raised</div></div><div class="vtile g"><div class="vlab">In-app clicks · 7d</div><div class="vnum g">258</div><div class="vst g">CSPs opening the nudge</div></div><div class="vtile a"><div class="vlab">Push clicks · 7d</div><div class="vnum a">33</div><div class="vst a">weaker channel</div></div></div>
+    <div class="hvitals" style="margin-bottom:14px"><div class="vtile g"><div class="vlab">Urgent nudges fired · 7d</div><div class="vnum g">1069</div><div class="vst g">SR-3 + SR-4 warnings raised</div></div><div class="vtile g"><div class="vlab">In-app clicks · 7d</div><div class="vnum g">258</div><div class="vst g">CSPs opening the nudge</div></div><div class="vtile a"><div class="vlab">Push clicks · 7d</div><div class="vnum a">33</div><div class="vst a">weaker channel</div></div></div>
     <div class="card">
       <table>
         <tr><th>Day (created)</th><th class="n">New tickets</th><th class="n">Assigned %</th><th class="n">Median TAT</th><th class="n">Within SLA %</th><th class="n">Closed ≤24h %</th></tr>
-<tr><td><b>29 Jun</b></td><td class="n">198</td><td class="n">36%</td><td class="n">0.6h</td><td class="n"><b style="color:var(--g)">100%</b></td><td class="n">100%</td></tr>
-<tr><td><b>28 Jun</b></td><td class="n">289</td><td class="n">45%</td><td class="n">9.2h</td><td class="n"><b style="color:var(--a)">62%</b></td><td class="n">100%</td></tr>
-<tr><td><b>27 Jun</b></td><td class="n">276</td><td class="n">53%</td><td class="n">1.7h</td><td class="n"><b style="color:var(--a)">68%</b></td><td class="n">98%</td></tr>
-<tr style="background:#FAF7FC"><td><b>7-day avg</b></td><td class="n"><b>254</b></td><td class="n"><b>41.3%</b></td><td class="n"><b>3.3h</b></td><td class="n"><b style="color:var(--a)">64.7%</b></td><td class="n"><b>90.7%</b></td></tr>
+<tr><td><b>29 Jun</b></td><td class="n">198</td><td class="n">36%</td><td class="n">0h</td><td class="n"><b style="color:var(--g)">100%</b></td><td class="n">100%</td></tr>
+<tr><td><b>28 Jun</b></td><td class="n">289</td><td class="n">45%</td><td class="n">3.1h</td><td class="n"><b style="color:var(--a)">62%</b></td><td class="n">100%</td></tr>
+<tr><td><b>27 Jun</b></td><td class="n">276</td><td class="n">53%</td><td class="n">0.9h</td><td class="n"><b style="color:var(--a)">68%</b></td><td class="n">98%</td></tr>
+<tr style="background:#FAF7FC"><td><b>7-day avg</b></td><td class="n"><b>254</b></td><td class="n"><b>41.3%</b></td><td class="n"><b>0.8h</b></td><td class="n"><b style="color:var(--a)">64.7%</b></td><td class="n"><b>90.7%</b></td></tr>
       </table>
-      <div class="note">Last-3-day SLA <b>77%</b> vs 7-day avg <b>64.7%</b> — <b>improving</b>. Engagement is real (in-app clicks above), but a clean causal lift vs a control needs 2–3 more weeks of mature data. TAT = created→assigned (assigned subset); SLA = resolved within 4 working hours (11:00–21:00 IST). Today's row is partial — fast tickets settle first, so its SLA reads high and falls as the day completes.</div>
+      <div class="note">Last-3-day SLA <b>77%</b> vs 7-day avg <b>64.7%</b> — <b>improving</b>. Engagement is real (in-app clicks above), but a clean causal lift vs a control needs 2–3 more weeks of mature data. TAT = <b>working-hours</b> created→assigned (11:00–21:00 IST, assigned subset) — overnight pauses excluded, so next-day assignments no longer spike it; SLA = resolved within 4 working hours. Today's row is partial — fast tickets settle first, so its SLA reads high and falls as the day completes.</div>
     </div>
   </section>
 
@@ -830,11 +830,11 @@
     <div class="card">
       <table>
         <tr><th>Window</th><th class="n">Tickets</th><th class="n">Assigned %</th><th class="n">Median assign-TAT</th><th class="n">Within-SLA %</th><th class="n">Closed ≤24h %</th></tr>
-<tr><td><b>Last 60 days</b></td><td class="n">3,979</td><td class="n">41%</td><td class="n">2.45 h</td><td class="n"><span class="pill a">62.9%</span></td><td class="n"><span class="pill g">87.4%</span></td></tr>
-        <tr><td><b>Last 7 days</b></td><td class="n">1,869</td><td class="n">41.7%</td><td class="n">2.15 h</td><td class="n"><span class="pill a">61.3%</span></td><td class="n"><span class="pill g">89.8%</span></td></tr>
-        <tr><td><b>Today (29 Jun, partial)</b></td><td class="n">198</td><td class="n">36.4%</td><td class="n">0.56 h</td><td class="n"><span class="pill g">100%*</span></td><td class="n"><span class="pill g">100%*</span></td></tr>
+<tr><td><b>Last 60 days</b></td><td class="n">3,979</td><td class="n">41%</td><td class="n">0.24 h</td><td class="n"><span class="pill a">62.9%</span></td><td class="n"><span class="pill g">87.4%</span></td></tr>
+        <tr><td><b>Last 7 days</b></td><td class="n">1,868</td><td class="n">41.6%</td><td class="n">0.47 h</td><td class="n"><span class="pill a">61.2%</span></td><td class="n"><span class="pill g">89.8%</span></td></tr>
+        <tr><td><b>Today (29 Jun, partial)</b></td><td class="n">198</td><td class="n">36.4%</td><td class="n">0 h</td><td class="n"><span class="pill g">100%*</span></td><td class="n"><span class="pill g">100%*</span></td></tr>
       </table>
-      <div class="note">*Today is in-progress — only fast tickets have settled, so SLA / Closed-24h read ~100% and will fall as the day completes. SLA = resolved within 4 working hours (11:00–21:00 IST). ~40% of tickets never log an ASSIGNED_TECHNICIAN state, so assign-TAT is over the assigned subset.</div>
+      <div class="note">*Today is in-progress — only fast tickets have settled, so SLA / Closed-24h read ~100% and will fall as the day completes. SLA = resolved within 4 working hours (11:00–21:00 IST). ~40% of tickets never log an ASSIGNED_TECHNICIAN state, so assign-TAT is over the assigned subset. TAT is now <b>working-hours</b> (11:00–21:00 IST) — next-day assignments no longer inflate it.</div>
     </div>
 
     <div class="grid g2" style="margin-top:14px">
@@ -850,7 +850,7 @@
     <div class="winhdr">Sources &amp; honest limits</div>
     <p style="margin-top:6px"><b>§1 Messaging</b> = CleverTap campaign dashboard (source of truth; the event-export mirror undercounts campaign sends/clicks). <b>§2–4 behaviour/timing/app</b> = event-stream export, ~5-day retention, directional. <b>§5 tickets</b> = service-ticket warehouse table (49 days).</p>
     <p style="margin-top:8px"><b>Not available in any source:</b> a "scheduled/sent" PN event beyond CleverTap's own count; push view/impression tracking; session-duration / time-spent field (dwell is a proxy); &gt;5 days of CleverTap engagement history. To build trend, the CleverTap campaign numbers must be logged daily. Nudge→action is association on a single launch day (23 Jun), not measured causal lift.</p>
-    <p style="margin-top:8px">Ticket metrics auto-refreshed hourly: 29 Jun 2026, 16:42 IST · CleverTap §1 &amp; event-stream §2–4 are the latest manual snapshot · 60-CSP CI pilot.</p>
+    <p style="margin-top:8px">Ticket metrics auto-refreshed hourly: 29 Jun 2026, 16:50 IST · CleverTap §1 &amp; event-stream §2–4 are the latest manual snapshot · 60-CSP CI pilot.</p>
   </footer>
 
 </div>
@@ -901,10 +901,10 @@ lineChart('techChart',{labels:DAYS,yMax:240,yTicks:3,series:[
 ]});
 var TDAYS=['19','20','21','22','23','24','25','26','27','28','29'];
 lineChart('slaChart',{labels:TDAYS,yMax:100,yTicks:4,yUnit:'%',target:75,series:[
-  {color:'#E5178F',data:[47.9,53.9,56.6,70.6,50.7,53.4,53.2,66.1,68.1,61.9,100]}
+  {color:'#E5178F',data:[48.4,53.9,56.6,70.6,50.7,53.4,53.2,66.1,68.1,61.9,100]}
 ]});
 lineChart('tatChart',{labels:TDAYS,yMax:11,yTicks:4,yUnit:'h',series:[
-  {color:'#1a73e8',data:[9.73,3.64,1.23,1.84,3.68,2.9,2.48,2.18,1.7,9.2,0.56]}
+  {color:'#1a73e8',data:[4.73,1.01,0,0.16,0.96,0.68,0.05,0.24,0.86,3.15,0]}
 ]});
 </script>
 </body>
