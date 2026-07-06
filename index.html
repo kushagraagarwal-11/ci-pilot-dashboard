@@ -120,7 +120,7 @@
     <h1>CI Messaging &amp; App-Behaviour Dashboard</h1>
     <div class="sub">Capability Intervention V1 pilot · 60-CSP cohort · how the PN &amp; in-app nudges are performing, and how app behaviour is moving</div>
     <div class="winrow">
-      <span class="winchip">Live · 06 Jul 2026, 23:17 IST · auto-refreshed hourly</span>
+      <span class="winchip">Live · 07 Jul 2026, 01:34 IST · auto-refreshed hourly</span>
       <span class="winchip">Campaign engagement = CleverTap counts API</span>
       <span class="winchip">Behaviour/app = event stream (~5-day window)</span>
       <span class="winchip">Tickets = warehouse (49 days)</span>
@@ -167,6 +167,7 @@
     <div style="margin:14px 0 2px;display:flex;align-items:center;gap:9px">
       <label style="font-weight:700;font-size:13px;color:#52465F">📅 View by date:</label>
       <select id="msgDate" onchange="switchMsgDate()" style="padding:7px 12px;border:1px solid var(--line);border-radius:9px;font-size:13px;font-weight:700;color:#2D2640;background:#fff;cursor:pointer"><option value="cumulative">Cumulative (since 22 Jun)</option>
+<option value="20260707">07 Jul 2026</option>
 <option value="20260706">06 Jul 2026</option>
 <option value="20260705">05 Jul 2026</option>
 <option value="20260704">04 Jul 2026</option>
@@ -179,18 +180,17 @@
 <option value="20260627">27 Jun 2026</option>
 <option value="20260626">26 Jun 2026</option>
 <option value="20260625">25 Jun 2026</option>
-<option value="20260624">24 Jun 2026</option>
-<option value="20260623">23 Jun 2026</option></select>
+<option value="20260624">24 Jun 2026</option></select>
       <span style="font-size:11.5px;color:var(--mut)">in-app shows that day's rate; push shows that day's clicks (Sent is cumulative-only)</span>
     </div>
     <div id="msgCumulative" class="grid g3" style="margin-top:14px">
       <div class="card">
         <h3>SR-1 · In-app <span class="tag live">running</span></h3>
         <div class="funnel">
-          <div class="fstage"><span class="fl">Viewed</span><div class="fbar fb2" style="width:100%">568</div></div>
+          <div class="fstage"><span class="fl">Viewed</span><div class="fbar fb2" style="width:100%">569</div></div>
           <div class="fstage"><span class="fl">Clicked</span><div class="fbar fb3" style="width:67%">379</div></div>
         </div>
-        <div class="ctrbox"><span>Clicked 379 / Viewed 568</span><span class="rate" style="color:var(--g)">66.7%</span></div>
+        <div class="ctrbox"><span>Clicked 379 / Viewed 569</span><span class="rate" style="color:var(--g)">66.6%</span></div>
         <div class="note">Morning banner — v2 (running) + v1 & 2-page attempts (stopped). <span class="smalln">IDs 1782343256,1782156728,1782316939,1782317341</span></div>
       </div>
       <div class="card">
@@ -239,14 +239,70 @@
         <div class="note">Stuck Ticket PN — running + 5 manual 23-Jun sends (0 clicks). <span class="smalln">IDs 1782192946,1782191379,1782191380,1782191381,1782191382,1782191383</span></div>
       </div>
     </div>
-    <div id="msgSets"><div class="msgset" data-date="20260706" style="display:none"><div class="grid g3" style="margin-top:14px">
+    <div id="msgSets"><div class="msgset" data-date="20260707" style="display:none"><div class="grid g3" style="margin-top:14px">
       <div class="card">
         <h3>SR-1 · In-app <span class="tag live">running</span></h3>
         <div class="funnel">
-          <div class="fstage"><span class="fl">Viewed</span><div class="fbar fb2" style="width:100%">22</div></div>
-          <div class="fstage"><span class="fl">Clicked</span><div class="fbar fb3" style="width:68%">15</div></div>
+          <div class="fstage"><span class="fl">Viewed</span><div class="fbar fb2" style="width:100%">0</div></div>
+          <div class="fstage"><span class="fl">Clicked</span><div class="fbar fb3" style="width:2%">0</div></div>
         </div>
-        <div class="ctrbox"><span>Clicked 15 / Viewed 22</span><span class="rate" style="color:var(--g)">68.2%</span></div>
+        <div class="ctrbox"><span>Clicked 0 / Viewed 0</span><span class="rate" style="color:var(--r)">0.0%</span></div>
+        <div class="note">Morning banner — v2 (running) + v1 & 2-page attempts (stopped). <span class="smalln">IDs 1782343256,1782156728,1782316939,1782317341</span></div>
+      </div>
+      <div class="card">
+        <h3>SR-1 · Push <span class="tag smalln">fallback</span></h3>
+        <div class="funnel">
+          <div class="fstage"><span class="fl">Sent</span><div class="fbar fb2" style="width:100%">—</div></div>
+          <div class="fstage"><span class="fl">Clicked</span><div class="fbar fb3" style="width:2%">0</div></div>
+        </div>
+        <div class="ctrbox"><span>Clicked 0 / Sent —</span><span class="rate" style="color:var(--a)">—</span></div>
+        <div class="note">Morning Ritual Fallback — stopped 1782143913 + scheduled 1782456551 (fires 27 Jun). (per-day Sent n/a) <span class="smalln">IDs 1782143913,1782456551</span></div>
+      </div>
+      <div class="card">
+        <h3>SR-3 · In-app <span class="tag live">running</span></h3>
+        <div class="funnel">
+          <div class="fstage"><span class="fl">Viewed</span><div class="fbar fb2" style="width:100%">0</div></div>
+          <div class="fstage"><span class="fl">Clicked</span><div class="fbar fb3" style="width:2%">0</div></div>
+        </div>
+        <div class="ctrbox"><span>Clicked 0 / Viewed 0</span><span class="rate" style="color:var(--r)">0.0%</span></div>
+        <div class="note">SLA-warning banner — LIVE 1782802428 (App-Launched + sr3_active==true, no segment AND) · stopped: 1782728649/1782299976/1782202510. <span class="smalln">IDs 1782802428,1782728649,1782299976,1782202510</span></div>
+      </div>
+      <div class="card">
+        <h3>SR-3 · Push <span class="tag live">running</span></h3>
+        <div class="funnel">
+          <div class="fstage"><span class="fl">Sent</span><div class="fbar fb2" style="width:100%">—</div></div>
+          <div class="fstage"><span class="fl">Clicked</span><div class="fbar fb3" style="width:2%">0</div></div>
+        </div>
+        <div class="ctrbox"><span>Clicked 0 / Sent —</span><span class="rate" style="color:var(--a)">—</span></div>
+        <div class="note">SLA Warning PN — sends fine (93+26); low click-rate is the issue, not delivery. (per-day Sent n/a) <span class="smalln">IDs 1782300028,1782199995</span></div>
+      </div>
+      <div class="card">
+        <h3>SR-4 · In-app <span class="tag live">running</span></h3>
+        <div class="funnel">
+          <div class="fstage"><span class="fl">Viewed</span><div class="fbar fb2" style="width:100%">0</div></div>
+          <div class="fstage"><span class="fl">Clicked</span><div class="fbar fb3" style="width:2%">0</div></div>
+        </div>
+        <div class="ctrbox"><span>Clicked 0 / Viewed 0</span><span class="rate" style="color:var(--r)">0.0%</span></div>
+        <div class="note">Stuck-ticket banner — #code · zone, 24-48h window (TEST campaign excluded). <span class="smalln">ID 1782161342</span></div>
+      </div>
+      <div class="card">
+        <h3>SR-4 · Push <span class="tag live">running</span></h3>
+        <div class="funnel">
+          <div class="fstage"><span class="fl">Sent</span><div class="fbar fb2" style="width:100%">—</div></div>
+          <div class="fstage"><span class="fl">Clicked</span><div class="fbar fb3" style="width:2%">0</div></div>
+        </div>
+        <div class="ctrbox"><span>Clicked 0 / Sent —</span><span class="rate" style="color:var(--a)">—</span></div>
+        <div class="note">Stuck Ticket PN — running + 5 manual 23-Jun sends (0 clicks). (per-day Sent n/a) <span class="smalln">IDs 1782192946,1782191379,1782191380,1782191381,1782191382,1782191383</span></div>
+      </div>
+      </div></div>
+<div class="msgset" data-date="20260706" style="display:none"><div class="grid g3" style="margin-top:14px">
+      <div class="card">
+        <h3>SR-1 · In-app <span class="tag live">running</span></h3>
+        <div class="funnel">
+          <div class="fstage"><span class="fl">Viewed</span><div class="fbar fb2" style="width:100%">23</div></div>
+          <div class="fstage"><span class="fl">Clicked</span><div class="fbar fb3" style="width:65%">15</div></div>
+        </div>
+        <div class="ctrbox"><span>Clicked 15 / Viewed 23</span><span class="rate" style="color:var(--g)">65.2%</span></div>
         <div class="note">Morning banner — v2 (running) + v1 & 2-page attempts (stopped). <span class="smalln">IDs 1782343256,1782156728,1782316939,1782317341</span></div>
       </div>
       <div class="card">
@@ -336,9 +392,9 @@
         <h3>SR-4 · In-app <span class="tag live">running</span></h3>
         <div class="funnel">
           <div class="fstage"><span class="fl">Viewed</span><div class="fbar fb2" style="width:100%">2</div></div>
-          <div class="fstage"><span class="fl">Clicked</span><div class="fbar fb3" style="width:50%">1</div></div>
+          <div class="fstage"><span class="fl">Clicked</span><div class="fbar fb3" style="width:2%">0</div></div>
         </div>
-        <div class="ctrbox"><span>Clicked 1 / Viewed 2</span><span class="rate" style="color:var(--g)">50.0%</span></div>
+        <div class="ctrbox"><span>Clicked 0 / Viewed 2</span><span class="rate" style="color:var(--r)">0.0%</span></div>
         <div class="note">Stuck-ticket banner — #code · zone, 24-48h window (TEST campaign excluded). <span class="smalln">ID 1782161342</span></div>
       </div>
       <div class="card">
@@ -966,62 +1022,6 @@
         <div class="ctrbox"><span>Clicked 1 / Sent —</span><span class="rate" style="color:var(--a)">—</span></div>
         <div class="note">Stuck Ticket PN — running + 5 manual 23-Jun sends (0 clicks). (per-day Sent n/a) <span class="smalln">IDs 1782192946,1782191379,1782191380,1782191381,1782191382,1782191383</span></div>
       </div>
-      </div></div>
-<div class="msgset" data-date="20260623" style="display:none"><div class="grid g3" style="margin-top:14px">
-      <div class="card">
-        <h3>SR-1 · In-app <span class="tag live">running</span></h3>
-        <div class="funnel">
-          <div class="fstage"><span class="fl">Viewed</span><div class="fbar fb2" style="width:100%">81</div></div>
-          <div class="fstage"><span class="fl">Clicked</span><div class="fbar fb3" style="width:64%">52</div></div>
-        </div>
-        <div class="ctrbox"><span>Clicked 52 / Viewed 81</span><span class="rate" style="color:var(--g)">64.2%</span></div>
-        <div class="note">Morning banner — v2 (running) + v1 & 2-page attempts (stopped). <span class="smalln">IDs 1782343256,1782156728,1782316939,1782317341</span></div>
-      </div>
-      <div class="card">
-        <h3>SR-1 · Push <span class="tag smalln">fallback</span></h3>
-        <div class="funnel">
-          <div class="fstage"><span class="fl">Sent</span><div class="fbar fb2" style="width:100%">—</div></div>
-          <div class="fstage"><span class="fl">Clicked</span><div class="fbar fb3" style="width:30%">5</div></div>
-        </div>
-        <div class="ctrbox"><span>Clicked 5 / Sent —</span><span class="rate" style="color:var(--a)">—</span></div>
-        <div class="note">Morning Ritual Fallback — stopped 1782143913 + scheduled 1782456551 (fires 27 Jun). (per-day Sent n/a) <span class="smalln">IDs 1782143913,1782456551</span></div>
-      </div>
-      <div class="card">
-        <h3>SR-3 · In-app <span class="tag live">running</span></h3>
-        <div class="funnel">
-          <div class="fstage"><span class="fl">Viewed</span><div class="fbar fb2" style="width:100%">4</div></div>
-          <div class="fstage"><span class="fl">Clicked</span><div class="fbar fb3" style="width:75%">3</div></div>
-        </div>
-        <div class="ctrbox"><span>Clicked 3 / Viewed 4</span><span class="rate" style="color:var(--g)">75.0%</span></div>
-        <div class="note">SLA-warning banner — LIVE 1782802428 (App-Launched + sr3_active==true, no segment AND) · stopped: 1782728649/1782299976/1782202510. <span class="smalln">IDs 1782802428,1782728649,1782299976,1782202510</span></div>
-      </div>
-      <div class="card">
-        <h3>SR-3 · Push <span class="tag live">running</span></h3>
-        <div class="funnel">
-          <div class="fstage"><span class="fl">Sent</span><div class="fbar fb2" style="width:100%">—</div></div>
-          <div class="fstage"><span class="fl">Clicked</span><div class="fbar fb3" style="width:30%">5</div></div>
-        </div>
-        <div class="ctrbox"><span>Clicked 5 / Sent —</span><span class="rate" style="color:var(--a)">—</span></div>
-        <div class="note">SLA Warning PN — sends fine (93+26); low click-rate is the issue, not delivery. (per-day Sent n/a) <span class="smalln">IDs 1782300028,1782199995</span></div>
-      </div>
-      <div class="card">
-        <h3>SR-4 · In-app <span class="tag live">running</span></h3>
-        <div class="funnel">
-          <div class="fstage"><span class="fl">Viewed</span><div class="fbar fb2" style="width:100%">6</div></div>
-          <div class="fstage"><span class="fl">Clicked</span><div class="fbar fb3" style="width:50%">3</div></div>
-        </div>
-        <div class="ctrbox"><span>Clicked 3 / Viewed 6</span><span class="rate" style="color:var(--g)">50.0%</span></div>
-        <div class="note">Stuck-ticket banner — #code · zone, 24-48h window (TEST campaign excluded). <span class="smalln">ID 1782161342</span></div>
-      </div>
-      <div class="card">
-        <h3>SR-4 · Push <span class="tag live">running</span></h3>
-        <div class="funnel">
-          <div class="fstage"><span class="fl">Sent</span><div class="fbar fb2" style="width:100%">—</div></div>
-          <div class="fstage"><span class="fl">Clicked</span><div class="fbar fb3" style="width:6%">1</div></div>
-        </div>
-        <div class="ctrbox"><span>Clicked 1 / Sent —</span><span class="rate" style="color:var(--a)">—</span></div>
-        <div class="note">Stuck Ticket PN — running + 5 manual 23-Jun sends (0 clicks). (per-day Sent n/a) <span class="smalln">IDs 1782192946,1782191379,1782191380,1782191381,1782191382,1782191383</span></div>
-      </div>
       </div></div></div>
     <div class="src"><b>Source:</b> CleverTap counts API (auto-refreshed hourly, cumulative since 22 Jun launch). In-app rate = Clicked / Viewed (both live); push rate = Clicked (live) / Sent (push "Sent" isn't API-fetchable — periodically set in the generator). <code>/1/targets/result.json</code> 400s for UI-built campaigns and the warehouse mirror undercounts; the <code>/1/counts/events.json</code> endpoint filtered by <code>wzrk_id</code> is the one that returns true per-campaign engagement.</div>
   </section>
@@ -1034,11 +1034,11 @@
     <div class="card">
       <table>
         <tr><th>Day (created)</th><th class="n">New tickets</th><th class="n">Assigned %</th><th class="n">Median TAT</th><th class="n">Within SLA %</th><th class="n">Closed ≤24h %</th></tr>
-<tr><td><b>06 Jul</b></td><td class="n">197</td><td class="n">19%</td><td class="n">0h</td><td class="n"><b style="color:var(--g)">99%</b></td><td class="n">100%</td></tr>
-<tr><td><b>05 Jul</b></td><td class="n">271</td><td class="n">37%</td><td class="n">0h</td><td class="n"><b style="color:var(--a)">73%</b></td><td class="n">98%</td></tr>
+<tr><td><b>06 Jul</b></td><td class="n">201</td><td class="n">19%</td><td class="n">0h</td><td class="n"><b style="color:var(--g)">99%</b></td><td class="n">100%</td></tr>
+<tr><td><b>05 Jul</b></td><td class="n">271</td><td class="n">37%</td><td class="n">0h</td><td class="n"><b style="color:var(--a)">73%</b></td><td class="n">97%</td></tr>
 <tr><td><b>04 Jul</b></td><td class="n">229</td><td class="n">47%</td><td class="n">0.4h</td><td class="n"><b style="color:var(--a)">64%</b></td><td class="n">94%</td></tr>
 <tr><td><b>03 Jul</b></td><td class="n">216</td><td class="n">34%</td><td class="n">0.1h</td><td class="n"><b style="color:var(--a)">63%</b></td><td class="n">92%</td></tr>
-<tr style="background:#FAF7FC"><td><b>7-day avg</b></td><td class="n"><b>229</b></td><td class="n"><b>35.1%</b></td><td class="n"><b>0.2h</b></td><td class="n"><b style="color:var(--a)">69.3%</b></td><td class="n"><b>92.3%</b></td></tr>
+<tr style="background:#FAF7FC"><td><b>7-day avg</b></td><td class="n"><b>230</b></td><td class="n"><b>35.1%</b></td><td class="n"><b>0.2h</b></td><td class="n"><b style="color:var(--a)">69.3%</b></td><td class="n"><b>92.1%</b></td></tr>
       </table>
       <div class="note">Last-3-day SLA <b>79%</b> vs 7-day avg <b>69.3%</b> — <b>improving</b>. Engagement is real (in-app clicks above), but a clean causal lift vs a control needs 2–3 more weeks of mature data. TAT = <b>working-hours</b> created→assigned (11:00–21:00 IST, assigned subset) — overnight pauses excluded, so next-day assignments no longer spike it; SLA = resolved within 4 working hours. Today's row is partial — fast tickets settle first, so its SLA reads high and falls as the day completes.</div>
     </div>
@@ -1173,9 +1173,9 @@
     <div class="card">
       <table>
         <tr><th>Window</th><th class="n">Tickets</th><th class="n">Assigned %</th><th class="n">Median assign-TAT</th><th class="n">Within-SLA %</th><th class="n">Closed ≤24h %</th></tr>
-<tr><td><b>Last 60 days</b></td><td class="n">5,684</td><td class="n">40.5%</td><td class="n">0.27 h</td><td class="n"><span class="pill a">61.9%</span></td><td class="n"><span class="pill g">86.9%</span></td></tr>
-        <tr><td><b>Last 7 days</b></td><td class="n">1,618</td><td class="n">35.2%</td><td class="n">0.05 h</td><td class="n"><span class="pill a">67%</span></td><td class="n"><span class="pill g">91.8%</span></td></tr>
-        <tr><td><b>Today (06 Jul, partial)</b></td><td class="n">197</td><td class="n">19.3%</td><td class="n">0 h</td><td class="n"><span class="pill g">98.9%*</span></td><td class="n"><span class="pill g">100%*</span></td></tr>
+<tr><td><b>Last 60 days</b></td><td class="n">5,688</td><td class="n">40.5%</td><td class="n">0.27 h</td><td class="n"><span class="pill a">61.9%</span></td><td class="n"><span class="pill g">86.9%</span></td></tr>
+        <tr><td><b>Last 7 days</b></td><td class="n">1,616</td><td class="n">35.1%</td><td class="n">0.05 h</td><td class="n"><span class="pill a">66.8%</span></td><td class="n"><span class="pill g">91.6%</span></td></tr>
+        <tr><td><b>Today (06 Jul, partial)</b></td><td class="n">201</td><td class="n">18.9%</td><td class="n">0 h</td><td class="n"><span class="pill g">98.9%*</span></td><td class="n"><span class="pill g">100%*</span></td></tr>
       </table>
       <div class="note">*Today is in-progress — only fast tickets have settled, so SLA / Closed-24h read ~100% and will fall as the day completes. SLA = resolved within 4 working hours (11:00–21:00 IST). ~40% of tickets never log an ASSIGNED_TECHNICIAN state, so assign-TAT is over the assigned subset. TAT is now <b>working-hours</b> (11:00–21:00 IST) — next-day assignments no longer inflate it.</div>
     </div>
@@ -1193,7 +1193,7 @@
     <div class="winhdr">Sources &amp; honest limits</div>
     <p style="margin-top:6px"><b>§1 Messaging</b> = CleverTap campaign dashboard (source of truth; the event-export mirror undercounts campaign sends/clicks). <b>§2–4 behaviour/timing/app</b> = event-stream export, ~5-day retention, directional. <b>§5 tickets</b> = service-ticket warehouse table (49 days).</p>
     <p style="margin-top:8px"><b>Not available in any source:</b> a "scheduled/sent" PN event beyond CleverTap's own count; push view/impression tracking; session-duration / time-spent field (dwell is a proxy); &gt;5 days of CleverTap engagement history. To build trend, the CleverTap campaign numbers must be logged daily. Nudge→action is association on a single launch day (23 Jun), not measured causal lift.</p>
-    <p style="margin-top:8px">Ticket metrics auto-refreshed hourly: 06 Jul 2026, 23:17 IST · CleverTap §1 &amp; event-stream §2–4 are the latest manual snapshot · 60-CSP CI pilot.</p>
+    <p style="margin-top:8px">Ticket metrics auto-refreshed hourly: 07 Jul 2026, 01:34 IST · CleverTap §1 &amp; event-stream §2–4 are the latest manual snapshot · 60-CSP CI pilot.</p>
   </footer>
 
 </div>
@@ -1242,12 +1242,12 @@ lineChart('opensChart',{labels:DAYS,yMax:600,yTicks:3,series:[
 lineChart('techChart',{labels:DAYS,yMax:240,yTicks:3,series:[
   {color:'#137333',data:[15,30,175,198,226,75]}
 ]});
-var TDAYS=['26','27','28','29','30','01','02','03','04','05','06'];
+var TDAYS=['27','28','29','30','01','02','03','04','05','06'];
 lineChart('slaChart',{labels:TDAYS,yMax:100,yTicks:4,yUnit:'%',target:75,series:[
-  {color:'#E5178F',data:[77.8,58.9,53.4,62,59.8,60.3,65.9,63.2,64.2,73.2,98.9]}
+  {color:'#E5178F',data:[58.9,53.4,62,59.8,60.3,65.9,63.2,64.2,72.6,98.9]}
 ]});
 lineChart('tatChart',{labels:TDAYS,yMax:11,yTicks:4,yUnit:'h',series:[
-  {color:'#1a73e8',data:[0.04,1,5.6,0,0.99,0.07,0,0.08,0.37,0.03,0]}
+  {color:'#1a73e8',data:[1,5.6,0,0.99,0.07,0,0.08,0.37,0.03,0]}
 ]});
 </script>
 </body>
